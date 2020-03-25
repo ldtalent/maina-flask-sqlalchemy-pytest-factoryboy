@@ -2,7 +2,7 @@ from api import db
 
 class TodoModel(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(150))
+    title = db.Column(db.String(350))
     description = db.Column(db.Text)
     completed = db.Column(db.Boolean, default=False)
     from_date = db.Column(db.DateTime)
